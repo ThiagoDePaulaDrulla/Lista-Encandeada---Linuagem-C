@@ -1,3 +1,6 @@
+AUTOR:Thiago De Paula Drulla
+TADS-Universidade Federal do Parana
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
@@ -29,7 +32,7 @@ NODO *Cria_Nodo()
     p=(NODO*)malloc(sizeof(NODO));
     if(!p)
     {
-        printf("Problema de AlocaÁao");
+        printf("Problema de Aloca√ßao");
         exit(0);
     }
     return p;
@@ -119,7 +122,7 @@ void quantidade (NODO *L,int tot)
     for(aux=L; aux!=NULL; aux=aux->prox)
         tot=tot++;
 }
-///Impress„o
+///Impress√£o
 void imprime (NODO *L)
 {
     NODO * aux;
@@ -273,7 +276,7 @@ void main()
             printf("Excluindo Inicio\n");
             aux=exlui_inicio(&L);
             if(aux==1)
-                printf("Exclus„o Realizada");
+                printf("Exclus√£o Realizada");
             system("cls");
             break;
 
@@ -281,7 +284,7 @@ void main()
             printf("Excluindo Fim\n");
             aux=exclui_fim(&L);
             if(aux==1)
-                printf("Exclus„o Realizada");
+                printf("Exclus√£o Realizada");
             system("cls");
             break;
 
@@ -296,7 +299,7 @@ void main()
             scanf("%d",&aux);
             aux=procura_elemento(&L,aux);
             if(aux==0)
-                printf("\n Dado n„o Localizado!\n");
+                printf("\n Dado n√£o Localizado!\n");
 
             break;
 
